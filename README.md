@@ -5,7 +5,7 @@ Eliminate VMware sound distortion that occurs when:
 * Host OS is Windows 8 or above
 * Guest OS is Windows NT 5.x (e.g. Windows XP)
 
-[Example of audio distortion](https://github.com/Raymai97/VMAudioBack/blob/trunk/vmware-win2k-distort.opus)
+[Example of audio distortion](https://github.com/Raymai97/VMAudioBack/blob/trunk/vmware-win2k-distort.opus) [Someone also demonstrated this on YouTube](https://youtu.be/4D8BRKvTp7E)
 
 ## Features
 
