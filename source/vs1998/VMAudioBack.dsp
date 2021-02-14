@@ -43,7 +43,7 @@ RSC=rc.exe
 # PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /YX /FD /c
-# ADD CPP /nologo /MD /W3 /GX /O2 /D "NDEBUG" /D "WIN32_LEAN_AND_MEAN" /D "UNICODE" /FR /YX /FD /c
+# ADD CPP /nologo /MD /W3 /GX /O2 /FR /YX /FD /c
 # ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /win32
 # ADD MTL /nologo /D "NDEBUG" /mktyplib203 /win32
 # ADD BASE RSC /l 0x4409 /d "NDEBUG"
@@ -69,7 +69,7 @@ LINK32=link.exe
 # PROP Intermediate_Dir "Debug"
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /YX /FD /GZ /c
-# ADD CPP /nologo /W3 /Gm /GX /ZI /Od /D "_DEBUG" /D "WIN32_LEAN_AND_MEAN" /D "UNICODE" /FR /YX /FD /GZ /c
+# ADD CPP /nologo /W3 /Gm /GX /ZI /Od /FR /YX /FD /GZ /c
 # ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD BASE RSC /l 0x4409 /d "_DEBUG"
@@ -89,7 +89,31 @@ LINK32=link.exe
 # Name "VMAudioBack - Win32 Debug"
 # Begin Source File
 
-SOURCE=.\main.c
+SOURCE=..\src\main.c
+# End Source File
+# Begin Source File
+
+SOURCE=..\src\util.c
+# End Source File
+# Begin Source File
+
+SOURCE=..\src\util.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\src\VMAudioBack.c
+# End Source File
+# Begin Source File
+
+SOURCE=..\src\VMAudioBack.h
+# End Source File
+# Begin Source File
+
+SOURCE=..\src\VMAudioBackSvc.c
+# End Source File
+# Begin Source File
+
+SOURCE=..\src\VMAudioBackSvc.h
 # End Source File
 # End Target
 # End Project
