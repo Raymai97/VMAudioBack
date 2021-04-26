@@ -106,10 +106,10 @@ static void MakeSpaceNull(WCHAR *p)
 int WINAPI wWinMain(HINSTANCE z_, HINSTANCE z__, WCHAR *pszCmdl, int z___)
 {
 	(void)(z_, z__, z___);
-	MakeSpaceNull(pszCmdl);
 	logging_init();
-	logd(L"-------------------- WinMain --------------------");
+	logd(L"-------------------- WinMain (v1.2) --------------------");
 	logdf(L"Command line: %s", pszCmdl);
+	MakeSpaceNull(pszCmdl);
 	if (lstrcmpW(pszCmdl, L"--install-service") == 0)
 	{
 		return Main_Install_VMAudioBackSvc();

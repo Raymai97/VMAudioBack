@@ -1,4 +1,4 @@
-VMAudioBack 1.1 // 2020-02-14
+VMAudioBack 1.2 // 2021-04-27
 Written by raymai97
 
 Eliminate VMware sound distortion that occurs when:
@@ -17,12 +17,16 @@ Now in your guest OS, locate the EXE and double-click to run it.
 Nothing will appear but you can see it running in Task Manager.
 When it is running, do something to test the sound.
 
-If the sound distortion is gone, congratulations!
-If it is still there, sorry I couldn't help you, you may stop reading.
-
-Now, to make it sticks, the program has to run on startup.
+To make it sticks, the program has to run on startup.
 One way to do it is by making it a Windows service.
 I added support to run as Windows service in Version 1.1.
 
-If you get "Error" installing service, enable logging and try again.
-It will generate a log file which would tell us why.
+Remember, if you face any issue, please enable logging and try again.
+You may enable logging by deleting "DISABLE_LOGGING" or rename it.
+It will generate a log file, useful for troubleshooting.
+
+Version 1.2 added a new method "SET_TIMER_RES".
+By default, old method (play MP3) used in previous version is used.
+If it's not working for you, or you prefer not to play MP3, you may
+enable this new method by renaming "SET_TIMER_RES_INSTEADD" to
+"SET_TIMER_RES_INSTEAD".

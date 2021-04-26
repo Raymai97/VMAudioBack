@@ -11,3 +11,5 @@ void logdf(WCHAR const *pszFmt, ...);
 void set_cwd_to_exe_dir(void);
 
 void MessageBoxError(WCHAR const *pszErr);
+
+BOOL try_open_SET_TIMER_RES_INSTEAD(void);
